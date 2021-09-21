@@ -1,0 +1,18 @@
+
+.connections a{
+    align-items: unset;
+    width: 60%;
+    padding: 10px;
+    border-bottom: 1px solid #dee1e6;
+    border-radius: .5rem;
+}
+.connections a:hover{
+    background-color: #f1f4f7;
+}
+.connection-name{
+    padding: 10px 0 0 15px;
+    font-size: 1.25rem;
+    font-family: Quicksand;
+    font-weight: 600;
+    color: #0B0080;
+}

@@ -1,0 +1,232 @@
+.chat{
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    /* padding-top: 3.4rem; */
+    font-family: "Quicksand";
+}
+.scroll-this::-webkit-scrollbar, .chat-details-messages::-webkit-scrollbar{
+    display: none;
+}
+
+.scroll-this{
+    overflow-y: scroll;
+}
+
+.chat-persons{
+    box-sizing: border-box;
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    width: 30%;
+    box-shadow: 0 0 50px 0 rgb(0 0 0 / 10%);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.chat-details{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+    
+.chat-details-head{
+    height: 7.5%;
+    background-color:#ede8e1;
+    box-shadow: 0 0 50px 0 rgb(0 0 0 / 10%);
+    width: 100%;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    padding: 1% 1%;
+    box-sizing: border-box;
+}
+.chat-details-messages{
+    width: 100%;
+    min-height: 45px;
+}
+.chat-send{
+    position: fixed;
+    bottom: 0;
+    width: 70%;
+    height: 50px;
+    /* background-color: #fffcf7; */
+    background-color: #f1f3f4;
+}
+
+
+.profile-image-sm{
+    color:#ede8e1;
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-family: "Raleway";
+    font-weight: 1000;
+}
+
+
+.chat-details-name{
+    font-size: 1.1rem;
+    padding-left: 2%;
+    font-weight: 500;
+}
+.message-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.message-input{
+    height: 40px;
+    width: 85%;
+    border-radius: 30px;
+    background-color: #f1f3f4;
+    border: 2px solid lightgray;
+    padding:10px 2%;
+    font-family: "Montserrat";
+    outline: none;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.message-input::-webkit-scrollbar{
+    display: none;
+} 
+.message-send-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    min-width: 35px;
+    width: 10%;
+    border: none;
+    border-radius: 35px;
+    background-color: cyan;
+    margin:0 1% ;
+    cursor: pointer;
+}
+
+.file{
+    opacity: 0;
+    height: .1px;
+    width: .1px;
+    position: absolute;
+}
+
+.chat-details-messages{
+    box-sizing: border-box;
+    height: calc(92.5% - 50px);
+    /* background-image: url("./images/chatbg1.jpg"); */
+    background-color: black;
+    padding:5px 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: scroll;
+}
+
+.go-back{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7px;
+    cursor: pointer;
+}
+
+.reply-message{
+    box-sizing: border-box;
+    max-height: 100px;
+    width: 70%;
+    background-color: #f1f3f4;
+    position: fixed;
+    bottom: 50px;
+    padding: 0% 8% 0 2%;
+    justify-content: space-between;
+}
+
+.reply-bar{
+    width: 3px;
+    min-height: 50px;
+    margin: 10px 20px;
+    background-color: #155f9c;
+    border-radius: 3px;
+    align-self: stretch;
+}
+.reply-name{
+    font-weight: 700;
+    color: #155f9c;
+}
+.reply-text{
+    font-size: .85rem;
+    margin-top: 5px;
+    overflow-y: hidden;
+    max-height: 40px;
+    max-width :200px;
+    overflow-wrap: break-word;
+}
+
+
+.fa-reply, .fa-share, .fa-times{
+    color: rgb(180, 134, 141);
+    cursor: pointer;
+}
+
+
+.fa-times{
+    font-weight: 600;
+    font-size: 20px;
+    color: #155f9c;
+}
+.reply-icon{
+    font-size: 30px;
+    color:  #155f9c;
+}
+
+.chat-alt{
+    font-size: 3rem;
+    text-align:center;
+    width: 70%;
+    color: rgb(199, 184, 184);
+}
+@media screen and (max-width:977px){
+    .chat-persons{
+        width: 100%;
+    }
+    .chat-person-head{
+        justify-content: flex-start;
+    }
+    .chat-details, .reply-message{
+        width: 100%;
+    }
+    .message-input{
+        width: 78%;
+    }
+    .chat-send{
+        width: 100%;
+    }
+    .go-back{
+        display: flex;
+    }
+    .reply-name{
+        font-size: .8;
+    }
+    .reply-text{
+        font-size: .75rem;
+    }
+    .reply-icon{
+        font-size: 25px;
+    }
+    .reply-bar{
+        margin: 5px 10px 5px 5px;
+    }
+}

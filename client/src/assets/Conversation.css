@@ -1,0 +1,65 @@
+
+.chat-person-head{
+    font-weight: 700;
+    padding: 10px 0px;
+    height: 7.5%;
+    width: 100%;
+    min-height: 45px;
+    font-size: 1.25rem;
+    background-color: #f1f3f4;
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
+.chat-person{
+    box-sizing: border-box;
+    min-height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 7%;
+    cursor: pointer;
+    border-bottom: 1px solid #dee1e6;
+}
+
+
+.profile-image-md{
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: "Raleway";
+    font-weight: 1000;
+}
+
+.message-info{
+    display: flex;
+    flex-direction: column;
+    padding:0 3%;
+    justify-content: flex-start;
+}
+
+.message-person-name{
+    font-weight: 600;
+}
+.message-person-name span{
+    font-size: .65rem;
+    color: #919191;
+    position: absolute;
+    right: 10px;
+}
+.message-person-text{
+    font-size: .8rem;
+}
+
+.abcxyz{
+    width: 100%;
+    text-align: center;
+}
+
+.chat-person-head .go-back{
+    display: flex;
+}

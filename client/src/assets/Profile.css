@@ -1,0 +1,125 @@
+.profile{
+    width: calc(100vw - 300px);
+    height: calc(100vh - 53.6px);
+    box-sizing: border-box;
+    margin-top: 53.6px;
+    padding: 1rem 3rem 0 3rem;
+    align-items: unset;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+
+.profile::-webkit-scrollbar, .connections::-webkit-scrollbar{
+    display: none;
+}
+
+.profile-details{
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-image-xl{
+    height: 280px;
+    width: 280px;
+    border-radius: 250px;
+    background-color: blue;
+    margin-bottom: 20px;
+    font-size: 8rem;
+    font-family: Quicksand;
+    justify-content: center;
+    font-weight: 700;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    box-shadow: 0 4px 64px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+
+.profile-details-name{
+    font-family: Quicksand;
+    font-weight: 600;
+    font-size: 2rem;
+    cursor: default ;
+}
+
+.profile-details-mail{
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: .5px;
+    font-weight: 600;
+    cursor: default ;
+}
+
+.connections{
+    margin: 20px 0;
+    width: 50%;
+    flex-direction: column;
+    overflow-y:scroll ;
+}
+
+.connections-head{
+    font-size: 1.75rem;
+    font-family: Quicksand;
+    box-sizing: border-box;
+    padding: 10px 0;
+    font-weight: 700;
+}
+
+.connections span{
+    font-size: 1.75rem;
+    color:  #dee1e6;
+    text-align: center;
+}
+
+.no-user-found{
+    font-size: 3rem;
+    font-weight: 600;
+    color:  #dee1e6;
+    font-family: Raleway;
+    justify-content: center;
+    width: 100%;
+    padding: 100px 2rem 0 2rem;
+}
+
+.profile-connect-btn{
+    width: 60%;
+    background-color: #e7294f;
+    box-sizing: border-box;
+    padding: .65rem;
+    font-size: 1.25rem;
+    border-radius: .5rem;
+    font-weight: 600;
+    font-family: Raleway;
+    letter-spacing: 2px;
+    justify-content: center;
+    margin-top: 25px;
+    cursor: pointer;
+    color: white;
+}
+.disconnect{
+    background-color:  #0066cc;
+}
+.pending{
+    background-color: rgb(255, 0, 140);
+}
+@media screen and (max-width : 977px){
+    .profile{
+        width: 100vw;
+    }
+}
+@media screen and (max-width : 768px){
+    .connections, .profile-details{
+        width: 100%;
+    }
+    .connections{
+        overflow-y: unset;
+    }
+    .profile{
+        flex-direction: column;
+        padding:1rem 0 0 0;
+        justify-content: flex-start;
+    }
+}

@@ -1,0 +1,84 @@
+.sidebar{
+    margin-top: 53.6px;
+    box-sizing: border-box;
+    padding: 2rem 1rem;
+    padding-right: 0;
+    width: 300px;
+    min-width: 300px;
+    height: calc(100vh - 53.6px);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-y: scroll;
+}
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+.sidebar-item{
+    box-sizing: border-box;
+    height: 3.1rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar-item i{
+    margin-right: 1rem;
+}
+
+.selected{
+    position: relative;
+    background-color: white;
+    color:  black;
+    border-radius: .75rem 0 0 .75rem;
+}
+
+.selected > div{
+    position: absolute;
+    right: 0;
+    bottom: -1rem;
+    height: 1rem;
+    width: 100%;
+    background-color: white;
+}
+
+.selected > div > div{
+    background-color: black;
+    height: 1rem;
+    width: 100%;
+    border-top-right-radius: .75rem;
+    cursor: initial;
+}
+
+.selected::before {
+    content: "";
+    height: 1rem;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: -1rem;
+    right: 0;
+    border-bottom-right-radius: .75rem;
+    z-index: 1;
+    cursor: initial;
+}
+.selected::after {
+    content: "";
+    height: 1rem;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: -1rem;
+    right: 0;
+    cursor: initial;
+}
+
+@media screen and (max-width : 977px){
+    .sidebar{
+        position: absolute;
+        left: -300px;
+    }
+}

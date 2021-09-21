@@ -1,0 +1,53 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand{
+    cursor: pointer;
+}
+
+.navbar{
+    position: fixed;
+    top:0;
+    background: transparent;
+    color:white;
+    z-index: 10;
+    padding: .675rem 15vw;
+    box-sizing: border-box;
+    transition: 0.5s;
+    width: 100%;
+    font-size: 1.8rem;
+    letter-spacing: 0.25vw;
+    font-weight: 600;
+    font-family: "Quicksand";
+}
+
+.active{
+    background-color: white;
+    color: black;
+    font-size: 1.6rem;
+    box-shadow: 0 0 50px 0 rgb(0 0 0 / 10%);
+}
+
+.nav-items-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item{
+    font-size: .9rem;
+    letter-spacing: 0.1vw;
+    margin: 0 1vw;
+    padding: 0.3vh 0.5vw;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:568px){
+    .navbar{
+        padding: .675rem 5vw;
+    }
+}

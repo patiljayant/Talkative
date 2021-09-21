@@ -1,0 +1,29 @@
+.find-parent{
+    padding-top: 53.6px;
+}
+.find{
+    width: calc(100vw - 300px);
+    height: calc(100vh - 53.6px);
+    box-sizing: border-box;
+    padding:1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: unset;
+    overflow-y: scroll;
+}
+
+.find::-webkit-scrollbar{
+    display: none;
+}
+
+@media screen and (max-width : 977px){
+    .find{
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width : 300px){
+    .find{
+        padding: 1rem 0px;
+    }
+}
