@@ -1,1 +1,2 @@
-# bug-tracker
+# Talkative
+End to End encrypted chat application
